@@ -42,7 +42,7 @@ router.post(
               },
               (err, ok) => {
                 if (err) throw err;
-                return res.redirect("/user/login");
+                return res.redirect("/login.html");
               }
             );
           });
