@@ -10,6 +10,7 @@ const mongoose = require('mongoose');
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/user');
 const registerRouter = require('./routes/register');
+const loginRouter = require('./routes/login');
 const apiUserRouter = require('./api/user');
 const apiPrivateRouter = require('./api/private');
 const apiTodoRouter = require('./api/todos');
@@ -39,6 +40,7 @@ app.use('/api/user', apiUserRouter);
 app.use('/api/private', apiPrivateRouter);
 app.use('/api/todos', apiTodoRouter);
 app.use('/register.html', registerRouter);
+app.use('/login.html', loginRouter);
 
 
 // catch 404 and forward to error handler
